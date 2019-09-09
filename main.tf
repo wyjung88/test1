@@ -10,4 +10,5 @@ provider "aws" {
 
 module "my_vpc" {
    source = "git::https://github.com/gruntwork-io/module-vpc.git//modules/vpc-app?ref=master"
+   name   = "${var.vpc_name}"
    }
