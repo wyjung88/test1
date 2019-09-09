@@ -7,3 +7,7 @@ provider "aws" {
     shared_credentials_file = "${var.home_dir}"
   profile                 = "${var.aws_profile}"
 }
+
+module "my_vpc" {
+   source = "git::https://github.com/gruntwork-io/module-vpc.git//modules/vpc-app?ref=master"
+   }
