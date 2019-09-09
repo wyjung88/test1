@@ -13,5 +13,4 @@ module "my_vpc" {
    vpc_name   = "${var.vpc_name}"
    aws_region = "${var.aws_region}"
    cidr_block = "${var.cidr_block}"
-   num_nat_gateways = "${var.num_nat_gateways}"
-   }
+}
